@@ -100,7 +100,8 @@ and `isSunk` functionality.
 a Boolean value as to whether a MissileAttempt was successful.
 
 - `Player` is an abstract class that is extended by the `HumanPlayer` and `ComputerPlayer` subclasses. A `Player` has a
-`Fleet` and two `Boards` - their own, where they `placeShips`, and an `opponentBoard` where the player tracks the result
-of their own `fireMissile` calls against their opponent. 
+a `name`, a `Fleet`, and two `Boards` - their own, where they `placeShips`, and an `opponentBoard` where the player tracks the result
+of their own `fireMissile` calls against their opponent. When a `Player`'s `Board` is fired upon, they record `receiveMissileFire`,
+ and `declareHitOrMiss`. When a `Player`'s `Fleet` `isDecimated`, their opponent `isWinner`.
 
 - `Game` begins the game, alternates between players, and ends when one wins.

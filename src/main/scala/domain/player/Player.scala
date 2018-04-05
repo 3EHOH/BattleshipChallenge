@@ -13,19 +13,18 @@ abstract class Player(name: String) {
   protected val playerBoard: Board = new Board()
   protected val opponentBoard: Board = new Board() //track what currentPlayer has hit or missed
 
-
   protected def fireMissile(missileCoordinate: Coordinate): Unit
   //left abstract because both computer and human will implement, but differently
 
   protected def receiveMissileFire(missileCoordinate: Coordinate): Unit = {
-  // check if coordinate on playerBoard is occupied by ship and call declareIsHitOrMiss
+  // record a missile fire against playerBoard is occupied by ship and call declareIsHitOrMiss
   }
 
   protected def declareIsHitOrMiss(isHitOrMiss: Boolean): Boolean = {
     //return a Boolean, or could be any binary, since it's an either-or scenario
   }
 
-  protected def placeShips(ships: List[Ship]): Board = {
+  protected def placeShips(ships: Fleet): Board = {
     //iterate over a list of ships and call placeShip for each individual one
   }
 

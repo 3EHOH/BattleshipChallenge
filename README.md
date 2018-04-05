@@ -90,7 +90,7 @@ I have defined these classes:
 - `Coordinate` is integer x, y values.
 
 - `Fleet` is a List of `Ship` instances. It is generated with a full list of ships at the beginning of a game, and 
-is decremented until it is decimated.
+is decremented until it `isDecimated`.
 
 - `Ship` has a `size`, `hitCount`, `bowCoordinate`, and `orientation`. It is an abstract class that is extended
 by the `Battleship`, `Carrier`, `Cruiser`, `Destroyer`, and `Submarine` subclasses. A ship has `isAtLocation`, `isHit`, 

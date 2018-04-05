@@ -85,7 +85,7 @@ I have defined these classes:
 
 - `Board` is composed of a 2D array of `Squares` instances.
 
-- `Square` is composed of `Coordinates` and Optional `Ship` and `MissileAttempt` instances.
+- `Square` is composed of `Coordinates`, and has `Option`al `Ship` and `MissileAttempt` instances.
 
 - `Coordinate` is integer x, y values.
 
@@ -93,7 +93,8 @@ I have defined these classes:
 is decremented until it is decimated.
 
 - `Ship` has a `size`, `hitCount`, `bowCoordinate`, and `orientation`. It is an abstract class that is extended
-by the `Battleship`, `Carrier`, `Cruiser`, `Destroyer`, and `Submarine` subclasses.
+by the `Battleship`, `Carrier`, `Cruiser`, `Destroyer`, and `Submarine` subclasses. A ship has `isAtLocation`, `isHit`, 
+and `isSunk` functionality.
 
 - `MissileAttempt` is an abstract class that is extended by the `MissileHit` and `MissileMiss` subclasses, which return
 a Boolean value as to whether a MissileAttempt was successful.

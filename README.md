@@ -61,7 +61,7 @@ The answer table's `questionid` column references to which question the answer b
 `iscorrect` column is a 0/1 value representing whether the answer is a correct answer for the question. Write a query to 
 find the questions with more than one correct answer.
 
-Answer, tested using MySQL syntax:
+Answer:
 ```
 select * from question 
 where id 

@@ -1,13 +1,13 @@
 package domain.board
 
-import domain.MissileAttempt.MissileAttempt
+import domain.missilelaunch.MissileAttempt
 import domain.ship.Ship
 
 class Square(xCoord: Int, yCoord: Int) {
 
   val coordinates: Coordinate = new Coordinate(xCoord, yCoord)
-  private val ship: Option[Ship]
-  private var missileAttempt: Option[MissileAttempt]
+  private val maybeShip: Option[Ship]
+  private var maybeMissileAttempt: Option[MissileAttempt]
 
   def hasShip(ship: Ship): Boolean = {
     //return if coordinate has ship

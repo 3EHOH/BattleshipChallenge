@@ -4,6 +4,10 @@ import domain.player._
 
 class Game {
 
+  val player1: Player
+  val player2: Player
+
+
   def playGame(): Unit = {
     //initialize board, players, loop via takeTurn and check isGameOver
   }

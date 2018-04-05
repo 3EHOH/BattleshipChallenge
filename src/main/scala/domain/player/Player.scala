@@ -1,9 +1,8 @@
 package domain.player
 
 import domain.board.{Board, Coordinate}
-import domain.fleet.Fleet
 import domain.ship.Orientation.Orientation
-import domain.ship.Ship
+import domain.ship.{Fleet, Ship}
 
 //abstract class over trait because base behavior must have constructor parameters
 

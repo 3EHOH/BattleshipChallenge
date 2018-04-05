@@ -1,6 +1,4 @@
-package domain.fleet
-
-import domain.ship._
+package domain.ship
 
 class Fleet {
 
